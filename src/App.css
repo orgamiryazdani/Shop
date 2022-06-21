@@ -2,37 +2,118 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #232b2d;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.productList {
+  margin-top: 50px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 5rem;
+  grid-row-gap: 2rem;
+  max-width: 1170px;
+  width: 90vw;
+}
+
+.product {
   display: flex;
   flex-direction: column;
+  background-color: transparent;
+}
+.black {
+  padding: 15px;
+  display: flex;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+  background: #000;
+  color: #fff;
+}
+
+.white {
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  background: rgb(237, 237, 237);
+}
+.like {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  height: 40%;
+}
+.like svg {
+  font-size: 25px;
+  color: rgb(166, 166, 166);
+  cursor: pointer;
+}
+
+.prouductImg {
+  width: 100%;
+  height: 80%;
+  background: #33e6ce;
+  box-shadow: 5px 5px 0px 0px #33e6ce;
+}
+.prouductImg img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.productDesc {
+  font-size: 20px;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.productDesc span {
+  color: #2dd5c1;
+}
+.btn {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #ede9fe;
+  border: 2px solid #000;
+  color: #6d28d9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.primary {
+  background-color: #2dd4bf;
+  color: #000;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #444;
 }

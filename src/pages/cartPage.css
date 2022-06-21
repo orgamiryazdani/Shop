@@ -1,0 +1,132 @@
+.cartItemList {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+  width: 70%;
+  padding: 1rem;
+  height: auto;
+  min-height: 200px;
+  justify-content: space-around;
+}
+.notLoginP {
+  color: #fff;
+  font-size: 30px;
+}
+.goToShopping{
+  margin-top: 30px;
+  font-size: 20px;
+  color: #fff;
+}
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.cartItem .itemImg {
+  width: 100px;
+  height: 100px;
+}
+.cartItem .itemImg img {
+  width: 100%;
+  height: auto;
+}
+
+.cartSummery,
+.cartSummeryCheckOut {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 30%;
+  margin-left: 3rem;
+}
+
+.cartSummeryCheckOut .totalCheckOut {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  justify-content: space-around;
+}
+.cartSummeryCheckOut .totalCheckOut hr{
+  width: 100%;
+}
+.cartCenter {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  max-width: 1170px;
+}
+
+.summeryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.summeryItem.net {
+  border-top: 1px solid #cccc;
+  padding-top: 3px;
+}
+.btnGroup {
+  display: flex;
+}
+.btnGroup button {
+  outline: none;
+  color: #000;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.btnGroup button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.btnGroup button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.btnGroup button:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+}
+.empty {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+
+  color: #fff;
+}
+.empty h2 {
+  margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .cartSummery {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .cartItemList {
+    width: 100%;
+  }
+  .cartItem .itemImg {
+    width: 70px;
+    height: 70px;
+  }
+  .cartSummeryCheckOut{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
